@@ -72,7 +72,8 @@ HEADLESS=true npx codeceptjs run
 ## 📝 Generación de reportes
 
 Allure Report 📊
-1️⃣ Ejecutar las pruebas:
+
+1️⃣ Ejecutar las pruebas: ``[Si ejecutaste las pruebas ve al paso 2]``
 ```bash
 npx codeceptjs run
 ```
@@ -80,7 +81,7 @@ npx codeceptjs run
 ```bash
 allure generate output --clean -o output/allure-report
 ```
-3️⃣ Abrir el reporte:
+3️⃣ Abrir el reporte: ``[Sino muestra detalles de la ejecuccion ve al paso 1 nuevamente]``
 ```bash
 allure open output/allure-report
 ```
@@ -98,7 +99,7 @@ http://the-internet.herokuapp.com/login
 ```
 -  Coloque a proposito un fallo en los Casos de Prueba 2 y 3, esto para generar screenshot y que se visualizen casos `Pass` y `Fail` en Allure:
 ```bash
-carpeta: pages
+carpeta: test\pages
   Login.Pages.js
     `class` LoginPage
         messages
@@ -115,5 +116,7 @@ Cambiar el string por: `Your username is invalid!`
 - Para los casos en Gherkin en el file `login.features` opte por traducirlos a ingles, por problemas al generar el XML y la compatibilidad con caracteres especiales [acentos] y con el idioma español.
 
 
-   
 
+Creado por 🏃 Rafael Arturo Valdez R
+
+- [GitHub](https://github.com/rafaelarthurov) || [LinkedIn](https://www.linkedin.com/in/rafaelarturovaldezrodriguez)
